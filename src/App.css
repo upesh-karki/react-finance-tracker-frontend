@@ -1,25 +1,22 @@
+/* Existing styles */
 .header {
   background-color: #f1f1f1;
   padding: 20px;
 }
-
 .header h1 {
   text-align: center;
   margin-bottom: 0;
   font-size: 20px;
 }
-
 .header p {
   text-align: center;
 }
-
-.header .logo {
-  text-align: center;
-}
-
 .header .logo img {
   cursor: pointer;
   width: 100px;
+}
+.header .logo {
+  text-align: center;
 }
 
 .menu {
@@ -27,12 +24,10 @@
   text-align: center;
   padding: 15px 0;
 }
-
 .menu .menuItem {
   display: inline-block;
   margin: 0 30px;
 }
-
 .menu .menuItem a {
   color: #fff;
   text-decoration: none;
@@ -41,11 +36,9 @@
 .page {
   padding: 30px;
 }
-
 .page h2 {
   text-align: center;
 }
-
 .page p {
   text-align: center;
 }
@@ -53,17 +46,14 @@
 .inputs .input {
   text-align: center;
 }
-
 .inputs .input input {
   height: 30px;
   width: 300px;
   margin: 5px 0;
 }
-
 .inputs .button {
   text-align: center;
 }
-
 .inputs .button button {
   background-color: #555;
   border: none;
@@ -80,4 +70,201 @@
   margin: 0 auto;
   padding: 15px;
   color: #fff;
+}
+
+/* New additions for Private page */
+.summary-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.total-amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0.5rem 0;
+}
+
+.charts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.chart-wrapper {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 300px;
+}
+
+.expense-section {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-top: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group label {
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.input-group input,
+.input-group select {
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.add-button {
+  background-color: #555;
+  border: none;
+  padding: 15px 30px;
+  color: #fff;
+  width: 100%;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.add-button:hover {
+  opacity: 0.9;
+}
+
+.expense-table {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+}
+
+.expense-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.expense-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+}
+
+.error-message {
+  background-color: #ffe3e3;
+  color: #cc0000;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+/* Net Worth Section */
+.net-worth-summary {
+  margin: 2rem 0;
+}
+
+.net-worth-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.summary-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.summary-card.highlight {
+  background: #f0f9ff;
+  border: 2px solid #4299e1;
+}
+
+/* Financial Sections */
+.financial-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+}
+
+/* Progress Bars */
+.progress-bar {
+  height: 20px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  background: #48bb78;
+  transition: width 0.3s ease;
+}
+
+.progress-bar span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 0.8rem;
+}
+
+/* Chart Container */
+.chart-wrapper {
+  height: 300px;
+  margin: 1rem 0;
 }
