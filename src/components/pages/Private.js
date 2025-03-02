@@ -40,7 +40,7 @@ export const Private = () => {
     const fetchExpenses = async () => {
       try {
          // Fix 1: Remove body from GET request and fix template literal
-         const response = await fetch(`/members/${user.memberid}/expenses`, {
+         const response = await fetch(`https://finance-tracker-api-dtfkggehg3ggc0au.canadacentral-01.azurewebsites.net/members/${user.memberid}/expenses`, {
            method: 'GET',
            headers: { 'Content-Type': 'application/json' }
            // Removed body property
@@ -68,7 +68,7 @@ const handleSubmit = async (e) => {
   }
 
   try {
-    const response = await fetch(`/members/${user.memberid}/expenses`, {
+    const response = await fetch(`https://finance-tracker-api-dtfkggehg3ggc0au.canadacentral-01.azurewebsites.net/members/${user.memberid}/expenses`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
