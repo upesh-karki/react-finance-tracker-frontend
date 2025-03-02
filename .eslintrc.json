@@ -1,0 +1,7 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "jsx-a11y/alt-text": "warn",
+    "no-unused-vars": "warn"
+  }
+}
