@@ -37,9 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://localhost:8585",
-  "devDependencies": {
-    "http-proxy-middleware": "^3.0.3"
   }
+//  "proxy": "http://localhost:8585",
+//  "devDependencies": {
+//    "http-proxy-middleware": "^3.0.3"
+//  }
 }
