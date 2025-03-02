@@ -28,7 +28,7 @@ const navigate = useNavigate();
   const handleRegister = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("https://finance-tracker-api-dtfkggehg3ggc0au.canadacentral-01.azurewebsites.net/members/register", {
+      const response = await fetch("/members/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

@@ -14,7 +14,7 @@ export const AuthWrapper = () => {
      // Login function that makes an API call to authenticate the user
     const login = async (userName, password) => {
       try {
-        const response = await fetch("https://finance-tracker-api-dtfkggehg3ggc0au.canadacentral-01.azurewebsites.net/members/login", {
+        const response = await fetch("/members/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
